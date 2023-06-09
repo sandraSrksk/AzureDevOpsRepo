@@ -1,0 +1,242 @@
+2023-05-23T15:35:50.2610594Z ##[section]Starting: Agent job
+2023-05-23T15:35:50.5642873Z ##[section]Starting: Initialize job
+2023-05-23T15:35:50.5645541Z Agent name: 'Hosted Agent'
+2023-05-23T15:35:50.5645891Z Agent machine name: 'WIN-RP8D1N230G0'
+2023-05-23T15:35:50.5646012Z Current agent version: '3.220.2'
+2023-05-23T15:35:50.5711118Z ##[group]Operating System
+2023-05-23T15:35:50.5711283Z Microsoft Windows Server 2019
+2023-05-23T15:35:50.5711370Z 10.0.17763
+2023-05-23T15:35:50.5711440Z Datacenter
+2023-05-23T15:35:50.5711553Z ##[endgroup]
+2023-05-23T15:35:50.5711631Z ##[group]Runner Image
+2023-05-23T15:35:50.5711721Z Image: windows-2019
+2023-05-23T15:35:50.5711804Z Version: 20230508.1
+2023-05-23T15:35:50.5712010Z Included Software: https://github.com/actions/runner-images/blob/win19/20230508.1/images/win/Windows2019-Readme.md
+2023-05-23T15:35:50.5712236Z Image Release: https://github.com/actions/runner-images/releases/tag/win19%2F20230508.1
+2023-05-23T15:35:50.5712367Z ##[endgroup]
+2023-05-23T15:35:50.5712452Z ##[group]Runner Image Provisioner
+2023-05-23T15:35:50.5712832Z 2.0.171.1
+2023-05-23T15:35:50.5712900Z ##[endgroup]
+2023-05-23T15:35:50.5713600Z Current image version: '20230508.1'
+2023-05-23T15:35:50.5719156Z Agent running as: 'VssAdministrator'
+2023-05-23T15:35:50.5763675Z Prepare build directory.
+2023-05-23T15:35:50.6108445Z Set build variables.
+2023-05-23T15:35:50.6137729Z Download all required tasks.
+2023-05-23T15:35:50.6168794Z Checking job knob settings.
+2023-05-23T15:35:50.6178149Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2023-05-23T15:35:50.6178716Z    Knob: AgentToolsDirectory = C:\hostedtoolcache\windows Source: ${AGENT_TOOLSDIRECTORY} 
+2023-05-23T15:35:50.6179893Z    Knob: AgentPerflog = C:\agents\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2023-05-23T15:35:50.6183482Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2023-05-23T15:35:50.6184051Z Finished checking job knob settings.
+2023-05-23T15:35:50.6616219Z Start tracking orphan processes.
+2023-05-23T15:35:50.6697294Z ##[section]Finishing: Initialize job
+2023-05-23T15:35:50.6885178Z ##[section]Async Command Start: DetectDockerContainer
+2023-05-23T15:35:50.6885464Z ##[section]Async Command End: DetectDockerContainer
+2023-05-23T15:35:50.6886163Z ##[section]Async Command Start: DetectDockerContainer
+2023-05-23T15:35:50.6886363Z ##[section]Async Command End: DetectDockerContainer
+2023-05-23T15:35:50.7505021Z ##[section]Starting: Checkout FirstProject@main to s
+2023-05-23T15:35:50.8640150Z ==============================================================================
+2023-05-23T15:35:50.8641425Z Task         : Get sources
+2023-05-23T15:35:50.8641835Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2023-05-23T15:35:50.8641975Z Version      : 1.0.0
+2023-05-23T15:35:50.8642180Z Author       : Microsoft
+2023-05-23T15:35:50.8642477Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2023-05-23T15:35:50.8642611Z ==============================================================================
+2023-05-23T15:35:51.4203630Z Syncing repository: FirstProject (Git)
+2023-05-23T15:35:51.4558999Z Prepending Path environment variable with directory containing 'git.exe'.
+2023-05-23T15:35:51.4572814Z ##[command]git version
+2023-05-23T15:35:54.3078498Z git version 2.39.1.windows.1
+2023-05-23T15:35:54.3105855Z ##[command]git lfs version
+2023-05-23T15:35:54.6151888Z git-lfs/3.3.0 (GitHub; windows amd64; go 1.19.3; git 77deabdf)
+2023-05-23T15:35:54.6449027Z ##[command]git init "D:\a\1\s"
+2023-05-23T15:35:54.7310923Z Initialized empty Git repository in D:/a/1/s/.git/
+2023-05-23T15:35:54.7377949Z ##[command]git remote add origin https://SandraSuurkask@dev.azure.com/SandraSuurkask/FirstProject/_git/FirstProject
+2023-05-23T15:35:54.7954311Z ##[command]git config gc.auto 0
+2023-05-23T15:35:54.8481749Z ##[command]git config --get-all http.https://SandraSuurkask@dev.azure.com/SandraSuurkask/FirstProject/_git/FirstProject.extraheader
+2023-05-23T15:35:54.9015232Z ##[command]git config --get-all http.extraheader
+2023-05-23T15:35:54.9498138Z ##[command]git config --get-regexp .*extraheader
+2023-05-23T15:35:55.0049738Z ##[command]git config --get-all http.proxy
+2023-05-23T15:35:55.0679941Z ##[command]git config http.version HTTP/1.1
+2023-05-23T15:35:55.1318877Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +f4ebc1ce3abdec220e8c537c143d47028de85447:refs/remotes/origin/f4ebc1ce3abdec220e8c537c143d47028de85447
+2023-05-23T15:35:55.6258732Z remote: Azure Repos        
+2023-05-23T15:35:55.6263312Z remote: 
+2023-05-23T15:35:55.6263695Z remote: Found 104 objects to send. (0 ms)        
+2023-05-23T15:35:55.6478683Z Receiving objects:   0% (1/104)
+2023-05-23T15:35:55.6479010Z Receiving objects:   1% (2/104)
+2023-05-23T15:35:55.6479228Z Receiving objects:   2% (3/104)
+2023-05-23T15:35:55.6485117Z Receiving objects:   3% (4/104)
+2023-05-23T15:35:55.6485865Z Receiving objects:   4% (5/104)
+2023-05-23T15:35:55.6486206Z Receiving objects:   5% (6/104)
+2023-05-23T15:35:55.6486438Z Receiving objects:   6% (7/104)
+2023-05-23T15:35:55.6487125Z Receiving objects:   7% (8/104)
+2023-05-23T15:35:55.6487371Z Receiving objects:   8% (9/104)
+2023-05-23T15:35:55.6487613Z Receiving objects:   9% (10/104)
+2023-05-23T15:35:55.6487922Z Receiving objects:  10% (11/104)
+2023-05-23T15:35:55.6488191Z Receiving objects:  11% (12/104)
+2023-05-23T15:35:55.6488446Z Receiving objects:  12% (13/104)
+2023-05-23T15:35:55.6488688Z Receiving objects:  13% (14/104)
+2023-05-23T15:35:55.6488996Z Receiving objects:  14% (15/104)
+2023-05-23T15:35:55.6489656Z Receiving objects:  15% (16/104)
+2023-05-23T15:35:55.6490358Z Receiving objects:  16% (17/104)
+2023-05-23T15:35:55.6490990Z Receiving objects:  17% (18/104)
+2023-05-23T15:35:55.6491577Z Receiving objects:  18% (19/104)
+2023-05-23T15:35:55.6492218Z Receiving objects:  19% (20/104)
+2023-05-23T15:35:55.6492793Z Receiving objects:  20% (21/104)
+2023-05-23T15:35:55.6493343Z Receiving objects:  21% (22/104)
+2023-05-23T15:35:55.6493950Z Receiving objects:  22% (23/104)
+2023-05-23T15:35:55.6494529Z Receiving objects:  23% (24/104)
+2023-05-23T15:35:55.6495660Z Receiving objects:  24% (25/104)
+2023-05-23T15:35:55.6496376Z Receiving objects:  25% (26/104)
+2023-05-23T15:35:55.6498680Z Receiving objects:  26% (28/104)
+2023-05-23T15:35:55.6499132Z Receiving objects:  27% (29/104)
+2023-05-23T15:35:55.6499456Z Receiving objects:  28% (30/104)
+2023-05-23T15:35:55.6499737Z Receiving objects:  29% (31/104)
+2023-05-23T15:35:55.6500042Z Receiving objects:  30% (32/104)
+2023-05-23T15:35:55.6500314Z Receiving objects:  31% (33/104)
+2023-05-23T15:35:55.6500795Z Receiving objects:  32% (34/104)
+2023-05-23T15:35:55.6501314Z Receiving objects:  33% (35/104)
+2023-05-23T15:35:55.6501817Z Receiving objects:  34% (36/104)
+2023-05-23T15:35:55.6506736Z Receiving objects:  35% (37/104)
+2023-05-23T15:35:55.6591761Z Receiving objects:  36% (38/104)
+2023-05-23T15:35:55.6592052Z Receiving objects:  37% (39/104)
+2023-05-23T15:35:55.6597387Z Receiving objects:  38% (40/104)
+2023-05-23T15:35:55.6620592Z Receiving objects:  39% (41/104)
+2023-05-23T15:35:55.6623704Z Receiving objects:  40% (42/104)
+2023-05-23T15:35:55.6628357Z Receiving objects:  41% (43/104)
+2023-05-23T15:35:55.6628674Z Receiving objects:  42% (44/104)
+2023-05-23T15:35:55.6629977Z Receiving objects:  43% (45/104)
+2023-05-23T15:35:55.6647487Z Receiving objects:  44% (46/104)
+2023-05-23T15:35:55.6647984Z Receiving objects:  45% (47/104)
+2023-05-23T15:35:55.6648271Z Receiving objects:  46% (48/104)
+2023-05-23T15:35:55.6651610Z Receiving objects:  47% (49/104)
+2023-05-23T15:35:55.6652983Z Receiving objects:  48% (50/104)
+2023-05-23T15:35:55.6653489Z Receiving objects:  49% (51/104)
+2023-05-23T15:35:55.6654504Z Receiving objects:  50% (52/104)
+2023-05-23T15:35:55.6673902Z Receiving objects:  51% (54/104)
+2023-05-23T15:35:55.6674857Z Receiving objects:  52% (55/104)
+2023-05-23T15:35:55.6675600Z Receiving objects:  53% (56/104)
+2023-05-23T15:35:55.6675938Z Receiving objects:  54% (57/104)
+2023-05-23T15:35:55.6679467Z Receiving objects:  55% (58/104)
+2023-05-23T15:35:55.6679784Z Receiving objects:  56% (59/104)
+2023-05-23T15:35:55.6680078Z Receiving objects:  57% (60/104)
+2023-05-23T15:35:55.6685567Z Receiving objects:  58% (61/104)
+2023-05-23T15:35:55.6732830Z Receiving objects:  59% (62/104)
+2023-05-23T15:35:55.6738105Z Receiving objects:  60% (63/104)
+2023-05-23T15:35:55.6739019Z Receiving objects:  61% (64/104)
+2023-05-23T15:35:55.6739254Z Receiving objects:  62% (65/104)
+2023-05-23T15:35:55.6752505Z Receiving objects:  63% (66/104)
+2023-05-23T15:35:55.6754242Z Receiving objects:  64% (67/104)
+2023-05-23T15:35:55.6755363Z Receiving objects:  65% (68/104)
+2023-05-23T15:35:55.6758994Z Receiving objects:  66% (69/104)
+2023-05-23T15:35:55.6775230Z Receiving objects:  67% (70/104)
+2023-05-23T15:35:55.6825717Z Receiving objects:  68% (71/104)
+2023-05-23T15:35:55.6881531Z Receiving objects:  69% (72/104)
+2023-05-23T15:35:55.6881797Z Receiving objects:  70% (73/104)
+2023-05-23T15:35:55.6882130Z Receiving objects:  71% (74/104)
+2023-05-23T15:35:55.6882752Z Receiving objects:  72% (75/104)
+2023-05-23T15:35:55.6894978Z Receiving objects:  73% (76/104)
+2023-05-23T15:35:55.6909924Z Receiving objects:  74% (77/104)
+2023-05-23T15:35:55.6917650Z Receiving objects:  75% (78/104)
+2023-05-23T15:35:55.6921188Z Receiving objects:  76% (80/104)
+2023-05-23T15:35:55.6928335Z Receiving objects:  77% (81/104)
+2023-05-23T15:35:55.6928601Z Receiving objects:  78% (82/104)
+2023-05-23T15:35:55.6928811Z Receiving objects:  79% (83/104)
+2023-05-23T15:35:55.6930833Z Receiving objects:  80% (84/104)
+2023-05-23T15:35:55.6933919Z Receiving objects:  81% (85/104)
+2023-05-23T15:35:55.6934319Z Receiving objects:  82% (86/104)
+2023-05-23T15:35:55.6934610Z Receiving objects:  83% (87/104)
+2023-05-23T15:35:55.6940459Z Receiving objects:  84% (88/104)
+2023-05-23T15:35:55.6943818Z Receiving objects:  85% (89/104)
+2023-05-23T15:35:55.6950482Z Receiving objects:  86% (90/104)
+2023-05-23T15:35:55.6954067Z Receiving objects:  87% (91/104)
+2023-05-23T15:35:55.6954318Z Receiving objects:  88% (92/104)
+2023-05-23T15:35:55.6958245Z Receiving objects:  89% (93/104)
+2023-05-23T15:35:55.6958557Z Receiving objects:  90% (94/104)
+2023-05-23T15:35:55.7010950Z Receiving objects:  91% (95/104)
+2023-05-23T15:35:55.7029357Z Receiving objects:  92% (96/104)
+2023-05-23T15:35:55.7049634Z Receiving objects:  93% (97/104)
+2023-05-23T15:35:55.7049928Z Receiving objects:  94% (98/104)
+2023-05-23T15:35:55.7050193Z Receiving objects:  95% (99/104)
+2023-05-23T15:35:55.7050906Z Receiving objects:  96% (100/104)
+2023-05-23T15:35:55.7051157Z Receiving objects:  97% (101/104)
+2023-05-23T15:35:55.7051400Z Receiving objects:  98% (102/104)
+2023-05-23T15:35:55.7054409Z Receiving objects:  99% (103/104)
+2023-05-23T15:35:55.7054923Z Receiving objects: 100% (104/104)
+2023-05-23T15:35:55.7055299Z Receiving objects: 100% (104/104), 859.56 KiB | 14.57 MiB/s, done.
+2023-05-23T15:35:55.7064779Z Resolving deltas:   0% (0/34)
+2023-05-23T15:35:55.7065657Z Resolving deltas:   2% (1/34)
+2023-05-23T15:35:55.7066847Z Resolving deltas:   5% (2/34)
+2023-05-23T15:35:55.7067513Z Resolving deltas:   8% (3/34)
+2023-05-23T15:35:55.7084079Z Resolving deltas:  11% (4/34)
+2023-05-23T15:35:55.7116023Z Resolving deltas:  14% (5/34)
+2023-05-23T15:35:55.7124669Z Resolving deltas:  20% (7/34)
+2023-05-23T15:35:55.7125774Z Resolving deltas:  23% (8/34)
+2023-05-23T15:35:55.7126750Z Resolving deltas:  26% (9/34)
+2023-05-23T15:35:55.7127715Z Resolving deltas:  29% (10/34)
+2023-05-23T15:35:55.7138664Z Resolving deltas:  32% (11/34)
+2023-05-23T15:35:55.7140704Z Resolving deltas:  35% (12/34)
+2023-05-23T15:35:55.7146686Z Resolving deltas:  38% (13/34)
+2023-05-23T15:35:55.7159352Z Resolving deltas:  41% (14/34)
+2023-05-23T15:35:55.7166737Z Resolving deltas:  47% (16/34)
+2023-05-23T15:35:55.7187677Z Resolving deltas:  50% (17/34)
+2023-05-23T15:35:55.7188837Z Resolving deltas:  52% (18/34)
+2023-05-23T15:35:55.7194294Z Resolving deltas:  55% (19/34)
+2023-05-23T15:35:55.7216527Z Resolving deltas:  58% (20/34)
+2023-05-23T15:35:55.7224808Z Resolving deltas:  61% (21/34)
+2023-05-23T15:35:55.7234359Z Resolving deltas:  64% (22/34)
+2023-05-23T15:35:55.7238004Z Resolving deltas:  67% (23/34)
+2023-05-23T15:35:55.7246653Z Resolving deltas:  70% (24/34)
+2023-05-23T15:35:55.7249731Z Resolving deltas:  73% (25/34)
+2023-05-23T15:35:55.7255941Z Resolving deltas:  76% (26/34)
+2023-05-23T15:35:55.7258010Z Resolving deltas:  79% (27/34)
+2023-05-23T15:35:55.7269236Z Resolving deltas:  82% (28/34)
+2023-05-23T15:35:55.7274927Z Resolving deltas:  85% (29/34)
+2023-05-23T15:35:55.7280594Z Resolving deltas:  88% (30/34)
+2023-05-23T15:35:55.7295980Z Resolving deltas:  91% (31/34)
+2023-05-23T15:35:55.7309197Z Resolving deltas:  94% (32/34)
+2023-05-23T15:35:55.7309702Z Resolving deltas:  97% (33/34)
+2023-05-23T15:35:55.7314000Z Resolving deltas: 100% (34/34)
+2023-05-23T15:35:55.7314255Z Resolving deltas: 100% (34/34), done.
+2023-05-23T15:35:55.8283509Z From https://dev.azure.com/SandraSuurkask/FirstProject/_git/FirstProject
+2023-05-23T15:35:55.8283950Z  * [new ref]         f4ebc1ce3abdec220e8c537c143d47028de85447 -> origin/f4ebc1ce3abdec220e8c537c143d47028de85447
+2023-05-23T15:35:55.8918885Z ##[command]git --config-env=http.extraheader=env_var_http.extraheader fetch --force --tags --prune --prune-tags --progress --no-recurse-submodules origin --depth=1 +f4ebc1ce3abdec220e8c537c143d47028de85447
+2023-05-23T15:35:56.0719615Z remote: Azure Repos        
+2023-05-23T15:35:56.0725165Z remote: 
+2023-05-23T15:35:56.0726551Z remote: Found 0 objects to send. (1 ms)        
+2023-05-23T15:35:56.1359204Z From https://dev.azure.com/SandraSuurkask/FirstProject/_git/FirstProject
+2023-05-23T15:35:56.1359628Z  * branch            f4ebc1ce3abdec220e8c537c143d47028de85447 -> FETCH_HEAD
+2023-05-23T15:35:56.1914665Z ##[command]git checkout --progress --force refs/remotes/origin/f4ebc1ce3abdec220e8c537c143d47028de85447
+2023-05-23T15:35:56.3906465Z Note: switching to 'refs/remotes/origin/f4ebc1ce3abdec220e8c537c143d47028de85447'.
+2023-05-23T15:35:56.3907329Z 
+2023-05-23T15:35:56.3908354Z You are in 'detached HEAD' state. You can look around, make experimental
+2023-05-23T15:35:56.3910685Z changes and commit them, and you can discard any commits you make in this
+2023-05-23T15:35:56.3911676Z state without impacting any branches by switching back to a branch.
+2023-05-23T15:35:56.3911901Z 
+2023-05-23T15:35:56.3912726Z If you want to create a new branch to retain commits you create, you may
+2023-05-23T15:35:56.3913126Z do so (now or later) by using -c with the switch command. Example:
+2023-05-23T15:35:56.3913265Z 
+2023-05-23T15:35:56.3913837Z   git switch -c <new-branch-name>
+2023-05-23T15:35:56.3914174Z 
+2023-05-23T15:35:56.3914593Z Or undo this operation with:
+2023-05-23T15:35:56.3914719Z 
+2023-05-23T15:35:56.3915192Z   git switch -
+2023-05-23T15:35:56.3915444Z 
+2023-05-23T15:35:56.3916051Z Turn off this advice by setting config variable advice.detachedHead to false
+2023-05-23T15:35:56.3916222Z 
+2023-05-23T15:35:56.3916614Z HEAD is now at f4ebc1c Build pipeline
+2023-05-23T15:35:56.4147012Z ##[section]Finishing: Checkout FirstProject@main to s
+2023-05-23T15:35:56.4172257Z ##[section]Starting: Checkout FirstProject@main to s
+2023-05-23T15:35:56.4275008Z ==============================================================================
+2023-05-23T15:35:56.4275119Z Task         : Get sources
+2023-05-23T15:35:56.4275189Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2023-05-23T15:35:56.4275288Z Version      : 1.0.0
+2023-05-23T15:35:56.4275341Z Author       : Microsoft
+2023-05-23T15:35:56.4275392Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2023-05-23T15:35:56.4275479Z ==============================================================================
+2023-05-23T15:35:56.7513698Z Cleaning any cached credential from repository: FirstProject (Git)
+2023-05-23T15:35:56.7686800Z ##[section]Finishing: Checkout FirstProject@main to s
+2023-05-23T15:35:56.7791249Z ##[section]Starting: Finalize Job
+2023-05-23T15:35:56.7821562Z Cleaning up task key
+2023-05-23T15:35:56.7822664Z Start cleaning up orphan processes.
+2023-05-23T15:35:56.7838637Z ##[section]Finishing: Finalize Job
+2023-05-23T15:35:56.7899416Z ##[section]Finishing: Agent job

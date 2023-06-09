@@ -1,0 +1,10 @@
+2023-05-23T15:35:56.4172229Z ##[section]Starting: Checkout FirstProject@main to s
+2023-05-23T15:35:56.4274995Z ==============================================================================
+2023-05-23T15:35:56.4275116Z Task         : Get sources
+2023-05-23T15:35:56.4275185Z Description  : Get sources from a repository. Supports Git, TfsVC, and SVN repositories.
+2023-05-23T15:35:56.4275285Z Version      : 1.0.0
+2023-05-23T15:35:56.4275338Z Author       : Microsoft
+2023-05-23T15:35:56.4275389Z Help         : [More Information](https://go.microsoft.com/fwlink/?LinkId=798199)
+2023-05-23T15:35:56.4275476Z ==============================================================================
+2023-05-23T15:35:56.7513664Z Cleaning any cached credential from repository: FirstProject (Git)
+2023-05-23T15:35:56.7686784Z ##[section]Finishing: Checkout FirstProject@main to s

@@ -1,0 +1,31 @@
+2023-05-23T15:35:50.5642805Z ##[section]Starting: Initialize job
+2023-05-23T15:35:50.5645525Z Agent name: 'Hosted Agent'
+2023-05-23T15:35:50.5645887Z Agent machine name: 'WIN-RP8D1N230G0'
+2023-05-23T15:35:50.5646008Z Current agent version: '3.220.2'
+2023-05-23T15:35:50.5711088Z ##[group]Operating System
+2023-05-23T15:35:50.5711280Z Microsoft Windows Server 2019
+2023-05-23T15:35:50.5711367Z 10.0.17763
+2023-05-23T15:35:50.5711437Z Datacenter
+2023-05-23T15:35:50.5711550Z ##[endgroup]
+2023-05-23T15:35:50.5711627Z ##[group]Runner Image
+2023-05-23T15:35:50.5711718Z Image: windows-2019
+2023-05-23T15:35:50.5711802Z Version: 20230508.1
+2023-05-23T15:35:50.5712006Z Included Software: https://github.com/actions/runner-images/blob/win19/20230508.1/images/win/Windows2019-Readme.md
+2023-05-23T15:35:50.5712232Z Image Release: https://github.com/actions/runner-images/releases/tag/win19%2F20230508.1
+2023-05-23T15:35:50.5712364Z ##[endgroup]
+2023-05-23T15:35:50.5712449Z ##[group]Runner Image Provisioner
+2023-05-23T15:35:50.5712745Z 2.0.171.1
+2023-05-23T15:35:50.5712897Z ##[endgroup]
+2023-05-23T15:35:50.5713593Z Current image version: '20230508.1'
+2023-05-23T15:35:50.5719137Z Agent running as: 'VssAdministrator'
+2023-05-23T15:35:50.5763653Z Prepare build directory.
+2023-05-23T15:35:50.6108422Z Set build variables.
+2023-05-23T15:35:50.6137629Z Download all required tasks.
+2023-05-23T15:35:50.6168772Z Checking job knob settings.
+2023-05-23T15:35:50.6178130Z    Knob: DockerActionRetries = true Source: $(VSTSAGENT_DOCKER_ACTION_RETRIES) 
+2023-05-23T15:35:50.6178708Z    Knob: AgentToolsDirectory = C:\hostedtoolcache\windows Source: ${AGENT_TOOLSDIRECTORY} 
+2023-05-23T15:35:50.6179888Z    Knob: AgentPerflog = C:\agents\perflog Source: ${VSTS_AGENT_PERFLOG} 
+2023-05-23T15:35:50.6183468Z    Knob: ContinueAfterCancelProcessTreeKillAttempt = true Source: $(VSTSAGENT_CONTINUE_AFTER_CANCEL_PROCESSTREEKILL_ATTEMPT) 
+2023-05-23T15:35:50.6184047Z Finished checking job knob settings.
+2023-05-23T15:35:50.6616149Z Start tracking orphan processes.
+2023-05-23T15:35:50.6697278Z ##[section]Finishing: Initialize job
